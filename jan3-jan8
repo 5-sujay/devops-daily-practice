@@ -1,0 +1,174 @@
+vi kill-pid-with-top-cpu-utilisation.sh
+  832  grep MemTotal /proc/meminfo
+  833  vi kill-pid-with-top-cpu-utilisation.sh
+  834  sh kill-pid-with-top-cpu-utilisation.sh
+  835  vi kill-pid-with-top-cpu-utilisation.sh
+  836  sh kill-pid-with-top-cpu-utilisation.sh
+  837  vi kill-pid-with-top-cpu-utilisation.sh
+  838  sh kill-pid-with-top-cpu-utilisation.sh
+  839  vi kill-pid-with-top-cpu-utilisation.sh
+  840  sh kill-pid-with-top-cpu-utilisation.sh
+  841  ps aux --sort %cpu
+  842  ps aux --sort %cpu |head
+  843  vi kill-pid-with-top-cpu-utilisation.sh
+  844  ps aux | head -2 |tail -1 | awk -F "" {'print $2'}
+  845  history
+  846   while true; do echo; done
+  847  :wq
+  848  ps aux
+  849  sh kill-pid-with-top-cpu-utilisation.sh
+  850  vi kill-pid-with-top-cpu-utilisation.sh
+  851  sh kill-pid-with-top-cpu-utilisation.sh
+  852  vi kill-pid-with-top-cpu-utilisation.sh
+  853  sh kill-pid-with-top-cpu-utilisation.sh
+  854  ps aux
+  855  p aux
+  856  ps aux
+  857  vi kill-pid-with-top-cpu-utilisation.sh
+  858  sh kill-pid-with-top-cpu-utilisation.sh
+  859  vi kill-pid-with-top-cpu-utilisation.sh
+  860  ps aux --sort -%cpu | head -2 |tail -1 | awk -F " " {'print $2'}
+  861  ps aux --sort -%cpu
+  862  sh kill-pid-with-top-cpu-utilisation.sh
+  863  ls
+  864  grep MemTotal /proc/meminfo
+  865  ps aux --sort -%mem | head -10
+  866  ps
+  867  ps aux
+  868  ps aux |head -1
+  869  ps aux |head -2 |tail -1
+  870  ps aux |head -2 |tail -1 |awk -F " " '{print $2}'
+  871  ps aux --sort -%cpu | head -10
+  872  ls
+  873  ps aux
+  874  ps aux |head -2 |tail -1
+  875  ps aux |head -2 |tail -1 |awk -F "" '{print $2}'
+  876  ps aux |head -2 |tail -1 |awk -F " " '{print $2}'
+  877  vi kill-pid-with-top-cpu-utilisation.sh
+  878  sh kill-pid-with-top-cpu-utilisation.sh
+  879  ps aux
+  880  yum install git -y
+  881  sudo yum install git -y
+  882  sudo yum install wget -y
+  883  sudo yum install jenkins -y
+  884  sudo yum install java -y
+  885  which java
+  886  ps aux
+  887  ps aux --sort -%cpu
+  888  ps aux --sort -%cpu  |grep "6894"
+  889  ps aux --sort -%cpu  |grep "12948"
+  890  ps aux --sort -%cpu  |grep "4298"
+  891  ps aux --sort -%cpu  |grep "root"
+  892  ps aux --sort -%cpu
+  893  ps aux --sort -%cpu  |grep "14648"
+  894  ps aux --sort -%cpu  |head -5 | grep "14648"
+  895  ps aux --sort -%cpu  |head -5
+  896  ps aux --sort -%cpu  |head -5 |grep "41"
+  897  ps aux --sort -%cpu  |head -5 |grep "1"
+  898  ps aux --sort -%cpu  |head -10 |grep "1"
+  899  ps aux --sort -%cpu
+  900  ps aux --sort -%cpu  | head
+  901  ps aux --sort -%cpu  | head |grep 11
+  902  ps aux --sort -%cpu  | head |grep "11"
+  903  ps aux --sort -%cpu
+  904  ps aux --sort -%cpu  | grep 16071
+  905  ps aux --sort -%cpu  | grep 3884
+  906  ls
+  907  vi kill-pid-with-top-cpu-utilisation.sh
+  908  sh kill-pid-with-top-cpu-utilisation.sh
+  909  enter yes to kill the top cpu consuming process
+  910  ps aux --sort %cpu
+  911  sh kill-pid-with-top-cpu-utilisation.sh
+  912  ps aux --sort %cpu
+  913  cat kill-pid-with-top-cpu-utilisation.sh
+  914  kill -9 1
+  915  sudo kill -9 1
+  916  ps aux --sort %cpu
+  917  sudo kill -9 1
+  918  ps aux --sort %cpu
+  919  ps aux --sort %mem
+  920  ps aux --sort -r %mem
+  921  ps aux | sort -r %mem
+  922  ps aux | sort -r %MEM
+  923  ps aux --sort %mem
+  924  ps aux --sort %mem |tail -1
+  925  ps aux --sort %mem |tail -1 |awk -F " " '{print $2}'
+  926  vi kill-pid-with-top-cpu-utilisation.sh
+  927  sh kill-pid-with-top-cpu-utilisation.sh
+  928  ps aux --sort %mem
+  929  String javaVersion = System.getProperty("java.version");
+  930  yum
+  931  history
+  932  npm view java versions
+  933  npm view java version
+  934  yu
+  935  yum list java
+  936  yum show java
+  937  yum --showduplicates list java
+  938  yum install java -y
+  939  sudo yum install java -y
+  940  yum --showduplicates list java
+  941  yum info "java"
+  942  sudo yum reinstall yum --noplugins
+  943  yum info "java"
+  944  history
+  945  yum info "httpd"
+  946  yum list -a httpd
+  947  yum list "httpd"
+  948  httpd -version
+  949  yum --showduplicates list "httpd"
+  950  yum --showduplicates list "java"
+  951  yum info "httpd"
+  952  yum list "httpd"
+  953  yum --showduplicates list httpd | expand
+  954  sudo yum install httpd-2.4.33-2.amzn2.0.2
+  955  httpd -version
+  956  sudo yum install httpd-2.4.33-2
+  957  sudo yum install httpd- 2.4.41-1.amzn2.0.1
+  958  yum info "httpd"
+  959  httpd -version
+  960  history
+  961  yum --showduplicates list httpd
+  962  yum install httpd-2.4.46-1.amzn2
+  963  sudo yum install httpd-2.4.46-1.amzn2
+  964  httpd -version
+  965  sudo yum remove httpd
+  966  sudo yum install httpd-2.4.46-1.amzn2
+  967  httpd -version
+  968  httpd --version
+  969  sudo yum install httpd-2.4.46-1.amzn2
+  970  httpd -version
+  971  which httpd
+  972  yum --showduplicates list httpd
+  973  git branch
+  974  cd devops-practice/
+  975  git branch
+  976  git checkout main
+  977  git checkout
+  978  git branch
+  979  ls
+  980  history
+  981  vi dec-7
+  982  ls
+  983  git --version
+  984  git add dec-7
+  985  mkdir devops-practice
+  986  cd devops-practice/
+  987  cd ..
+  988  cp /home/ec2-user/dec-7  /home/ec2-user/devops-practice/
+  989  cd devops-practice/
+  990  ls
+  991  cat dec-7
+  992  git init
+  993  git add *
+  994  git commit -m "push dec-7 file to git hub"
+  995  git push https://github.com/5-sujay/devops-prcactice-commands.git
+  996   git push --set-upstream https://github.com/5-sujay/devops-prcactice-commands.git main
+  997   git push --set-upstream https://github.com/5-sujay/devops-prcactice-commands.git master
+  998  ls
+  999  cd devops-daily/
+ 1000  ls
+ 1001  ls -a
+ 1002  git pull https://github.com/5-sujay/devops-daily-practice.git
+ 1003  ls
+ 1004  history
