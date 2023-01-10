@@ -1,0 +1,100 @@
+ 1  ls
+    2  sudo apt-get remove docker docker-engine docker.io containerd runc
+    3  sudo apt-get update
+    4  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+    5  sudo mkdir -p /etc/apt/keyrings
+    6  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    7  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+    8    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    9  sudo apt-get update
+   10  sudo chmod a+r /etc/apt/keyrings/docker.g
+   11  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   12  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   13    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   14  sudo apt-get update
+   15  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   16  sudo apt-get update
+   17  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   18  sudo docker run hello-world
+   19  docker --version
+   20  docker images
+   21  hostname -i
+   22  uname -a
+   23  docker pull ubuntu:my_ubuntu
+   24  docker pull ubuntu
+   25  systemctl status docker
+   26  systemctl restart docker
+   27  docker run hello-world
+   28  docker images
+   29  docker pull ubuntu:my-ubuntu
+   30  docker pull ubuntu
+   31  history
+   32  docker pull ubuntu:my_ubuntu
+   33  docker pull debian:jessie
+   34  docker pull ubuntu:sujay
+   35  docker images
+   36  docker images ubuntu
+   37  docker pull ubuntu
+   38  docker images
+   39  docker pull ubuntu:ghggh
+   40  docker images -q
+   41  docker rmi ubuntu
+   42  docker rmi 3aaeab7a4777
+   43  docker images
+   44  docker rmi $(docker images -q)
+   45  docker images 
+   46  docker stop hello-world
+   47  docker ps
+   48  docker ps -a
+   49  docker rm hello-world
+   50  docker rm  $(docker ps -q -a)
+   51  docker images
+   52  docker rmi $(docker images -q)
+   53  docker images
+   54  docker ps -a
+   55  docker pull ubuntu 
+   56  docker run hello-world
+   57  docker ps
+   58  docker pull debian:jessie
+   59  docker run -itd ubuntu
+   60  docker ps
+   61  docker container ls
+   62  docker ps -a
+   63  docker run -it -d --name my-ubuntu ubuntu
+   64  docker ps
+   65  docker run -it -d --name sujay ubuntu
+   66  docker run -it -d --name vijay ubuntu
+   67  docker ps
+   68  docker rm $(docker stop 1dbf60a16c0d)
+   69  docker cantainer ls
+   70  docker container ls
+   71  docker stop 7a4378cdbfd4 | xargs -I{} docker rm "{}"
+   72  docker ps
+   73  docker ps -a
+   74  docker ps -a --filter status=exited
+   75  docke stop 4c81af7e3e06
+   76  docker ps -a
+   77  docker ps -a --filter status=exited
+   78  docker stop 4c81af7e3e06
+   79  docker ps -a --filter status=exited
+   80  docker ps -aq --filter status=exited
+   81  docker rm $(docker ps -aq --filter status=exited)
+   82  docker ps -a
+   83  docker ps -aq
+   84  docker attach eeb4b9601934
+   85  docker exec -it eeb4b9601934
+   86  docker exec -it eeb4b9601934 /bin/sh
+   87  docker ps
+   88  docker run -it -d --name sujay ubuntu
+   89  docker run -it -d --name sujays ubuntu
+   90  docker ps
+   91  docker exec -it a827eeb32fca /bin/sh
+   92  docker ps
+   93  lsns
+   94  cgroups
+   95  docker images
+   96  sudo docker images
+   97  sudo groupadd docker
+   98  sudo usermod -aG docker $USER
+   99  newgrp docker
+  100  history 
