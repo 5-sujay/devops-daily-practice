@@ -1,0 +1,28 @@
+which java
+   27  java --version
+   28  sudo apt install default-jre  
+   29  java --version
+   30  apt-cache policy java
+   31  apt-cache policy vlc
+   32  apt-cache madison f-spot
+   33  apt-cache madison apache2
+   34  apt-cache madison default-jre
+   35  apt-cache policy vlc
+   36  apt-cache policy openjdk
+   37  apt list 
+   38  docker images
+   39  docker ps
+   40  sudo Dockerfile
+   41  sudo vi Dockerfile
+   42  docker build -t my-image .
+   43  sudo vi Dockerfile
+   44  docker build -t my-image .
+   45  sudo vi Dockerfile
+   46  docker build -t my-image .
+   47  sudo vi Dockerfile
+   48  docker build -t my-image .
+   49  docker images
+   50  docker ps
+   51  docker run -it -d --name my-ubuntu my-image
+   52  docker ps
+   53  history
