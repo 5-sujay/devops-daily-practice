@@ -1,0 +1,83 @@
+100  pwd
+  101  ls
+  102  vi Dockerfile
+  103  docker build -t sample .
+  104  cd ..
+  105  ls
+  106  pwd
+  107  docker run -it --name cont123 sample
+  108  pwd
+  109  ls
+  110  cd ubuntu/
+  111  ls
+  112  cd docktest/
+  113  ls
+  114  rm -rf textfile
+  115  rm -rf text.txt
+  116  ls
+  117  touch s1.txt
+  118  pwd
+  119  cd ..
+  120  ls
+  121  vi Dockerfile
+  122  docker build -t sample .
+  123  tree
+  124  sudo apt  install tree
+  125  tree
+  126  ls
+  127  vi Dockerfile
+  128  docker build -it command .
+  129  docker build -t command .
+  130  docker run -it --rm --name my-command command
+  131  vi Dockerfile
+  132  docker ps
+  133  docker build -t command .
+  134  docker run -it --name my-command command
+  135  docker ps
+  136  vi Dockerfile
+  137  docker build -t command .
+  138  docker run -it --name my-command command
+  139  docker ps
+  140  dcker ps -a
+  141  docker ps -a
+  142  vi Dockerfile
+  143  dcker ps -a
+  144  docker ps -a
+  145  docker ps
+  146  docker build -t command .
+  147  docker run -it --name my-command command
+  148  docker run -it --rm --name my-command1 command
+  149  vi Dockerfile
+  150  docker build -t command .
+  151  docker run -it --rm --name my-command1 command
+  152  vi Dockerfile
+  153  docker build -t command .
+  154  docker run -it --rm --name my-command1 command
+  155  docker run -it --rm --name my-command12 command
+  156  vi Dockerfile
+  157  docker build -t entryp .
+  158  docker run -it --name entrycont entryp
+  159  docker: Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: exec: "echo ": executable file not found in $PATH: unknown.
+  160  vi Dockerfile
+  161  docker build -t argu --build-arg  INPUT="hi this the argument passed by me"
+  162  docker build -t argu --build-arg  INPUT="hi this the argument passed by me" .
+  163  docker run -it --rm --name argu-cont argu
+  164  vi Dockerfile
+  165  docker build -t argud .
+  166*
+  167  vi Dockerfile
+  168  docker build -t argud .
+  169  docker build -t argud --build-arg dollar="75".
+  170  docker build -t argud --build-arg dollar="75" .
+  171  docker run -it --rm --name argu-contd1 argud
+  172  vi Dockerfile
+  173  docker build -t argud .
+  174  docker run -it --rm --name argu-contd12 argud
+  175  docker build -t argud .
+  176  docker run -it --rm  --build-arg dollar="55" --name argu-contd123 argud
+  177  docker build -t argud --build-arg dollar="55" .
+  178  docker run -it --rm  --name argu-contd1231 argud
+  179  docker ps -a
+  180  docker ps
+  181  history
+
