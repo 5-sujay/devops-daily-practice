@@ -1,0 +1,479 @@
+ 1  docker run hello-world
+    2  docker images
+    3  hostname -i
+    4  uname -a
+    5  uname
+    6  sudo apt-get update
+    7  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+    8  sudo mkdir -p /etc/apt/keyrings
+    9  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   10  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   11    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   12  sudo apt-get update
+   13  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   14  sudo apt-get update
+   15  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   16  sudo docker run hello-world
+   17  sudo groupadd docker
+   18  sudo usermod -aG docker $USER
+   19  newgrp docker
+   20  apt-cache policy java
+   21  yum install java -y
+   22  sudo apt-get install java -y
+   23  sudo aptinstall java -y
+   24  sudo apt install java -y
+   25  sudo apt install java
+   26  which java
+   27  java --version
+   28  sudo apt install default-jre
+   29  java --version
+   30  apt-cache policy java
+   31  apt-cache policy vlc
+   32  apt-cache madison f-spot
+   33  apt-cache madison apache2
+   34  apt-cache madison default-jre
+   35  apt-cache policy vlc
+   36  apt-cache policy openjdk
+   37  apt list
+   38  docker images
+   39  docker ps
+   40  sudo Dockerfile
+   41  sudo vi Dockerfile
+   42  docker build -t my-image .
+   43  sudo vi Dockerfile
+   44  docker build -t my-image .
+   45  sudo vi Dockerfile
+   46  docker build -t my-image .
+   47  sudo vi Dockerfile
+   48  docker build -t my-image .
+   49  docker images
+   50  docker ps
+   51  docker run -it -d --name my-ubuntu my-image
+   52  docker ps
+   53  history
+   54  ls
+   55  cat  Dockerfile
+   56  history
+   57  docker images
+   58  vi Dockerfile
+   59  docker build -t my-image1 .
+   60  docker run -it -d --name my-cont my-image1
+   61  docker images
+   62  docker ps
+   63  vi Dockerfile
+   64  docker attach 57762ed82b98
+   65  pwd
+   66  ls
+   67  vi textfile
+   68  ls
+   69  vi Dockerfile
+   70  docker build my-image-text .
+   71  docker build -t my-image-text .
+   72  ls
+   73  mkdir docktest
+   74  mv textfile \$PWD/docktest/
+   75  mv textfile /home/ubuntu/docktest/
+   76  ls
+   77  cd docktest/
+   78  ls
+   79  cd ..
+   80  vi Dockerfile
+   81  docker build -t my-image2 .
+   82  ls
+   83  cd docktest/
+   84  ls
+   85  pwd
+   86  touch text.txt
+   87  vi text.txt
+   88  cd ..
+   89  ls
+   90  vi Dockerfile
+   91  docker build -t myimage2 .
+   92  pwd
+   93  ls
+   94  touch s.txt
+   95  ls
+   96  vi Dockerfile
+   97  docker build -t sample .
+   98  vi Dockerfile
+   99  docker build -t sample .
+  100  pwd
+  101  ls
+  102  vi Dockerfile
+  103  docker build -t sample .
+  104  cd ..
+  105  ls
+  106  pwd
+  107  docker run -it --name cont123 sample
+  108  pwd
+  109  ls
+  110  cd ubuntu/
+  111  ls
+  112  cd docktest/
+  113  ls
+  114  rm -rf textfile
+  115  rm -rf text.txt
+  116  ls
+  117  touch s1.txt
+  118  pwd
+  119  cd ..
+  120  ls
+  121  vi Dockerfile
+  122  docker build -t sample .
+  123  tree
+  124  sudo apt  install tree
+  125  tree
+  126  ls
+  127  vi Dockerfile
+  128  docker build -it command .
+  129  docker build -t command .
+  130  docker run -it --rm --name my-command command
+  131  vi Dockerfile
+  132  docker ps
+  133  docker build -t command .
+  134  docker run -it --name my-command command
+  135  docker ps
+  136  vi Dockerfile
+  137  docker build -t command .
+  138  docker run -it --name my-command command
+  139  docker ps
+  140  dcker ps -a
+  141  docker ps -a
+  142  vi Dockerfile
+  143  dcker ps -a
+  144  docker ps -a
+  145  docker ps
+  146  docker build -t command .
+  147  docker run -it --name my-command command
+  148  docker run -it --rm --name my-command1 command
+  149  vi Dockerfile
+  150  docker build -t command .
+  151  docker run -it --rm --name my-command1 command
+  152  vi Dockerfile
+  153  docker build -t command .
+  154  docker run -it --rm --name my-command1 command
+  155  docker run -it --rm --name my-command12 command
+  156  vi Dockerfile
+  157  docker build -t entryp .
+  158  docker run -it --name entrycont entryp
+  159  docker: Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: exec: "echo ": executable file not found in $PATH: unknown.
+  160  sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+  161  sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.tar.gz
+  162  ls
+  163  cd docktest/
+  164  cp Dockerfile  /home/ubuntu/
+  165  cd ..
+  166  ls
+  167  vi Dockerfile
+  168  cat Dockerfile
+  169  vi Dockerfile
+  170  cat Dockerfile
+  171  docker build -t addz .
+  172  docker run -it --rm --name addcont addz
+  173  ls
+  174  vi Dockerfile
+  175  docker build -t addz .
+  176  docker run -it --rm --name addapache addz
+  177  docker ps
+  178  docker exec -it cba599b8c571 ls /home/ubuntu/
+  179  docker run -it --rm --name addapache addz
+  180  docker attach cba599b8c571
+  181  docker stop cba599b8c571
+  182  docker ps
+  183  docker images
+  184  vi Dockerfile
+  185  docker build -t argu --build-arg  INPUT="hi this the argument passed by me"
+  186  docker build -t argu --build-arg  INPUT="hi this the argument passed by me" .
+  187  docker run -it --rm --name argu-cont argu
+  188  vi Dockerfile
+  189  docker build -t argud .
+  190  vi Dockerfile
+  191  docker build -t argud .
+  192  docker build -t argud --build-arg dollar="75".
+  193  docker build -t argud --build-arg dollar="75" .
+  194  docker run -it --rm --name argu-contd1 argud
+  195  vi Dockerfile
+  196  docker build -t argud .
+  197  docker run -it --rm --name argu-contd12 argud
+  198  docker build -t argud .
+  199  docker run -it --rm  --build-arg dollar="55" --name argu-contd123 argud
+  200  docker build -t argud --build-arg dollar="55" .
+  201  docker run -it --rm  --name argu-contd1231 argud
+  202  docker ps -a
+  203  docker ps
+  204  history
+  205  100  pwd
+  206  vi jan10-11
+  207  sudo apt-get install git
+  208  mkdir git_test
+  209  cd git_test/
+  210  cd ..
+  211  ls
+  212  cp jan10-11  ./git_test/
+  213  cd git_test/
+  214  ls
+  215  git init
+  216  ls -a
+  217  cd git_test/
+  218  ls
+  219  ls -a
+  220  git clone https://github.com/5-sujay/devops-daily-practice.git
+  221  git add jan10-11
+  222  git status
+  223  git commit -m "pushing commands practiced on dockerfile,ARG,COPY,ADD,ENTRYPOINT"
+  224  git status
+  225  git push https://github.com/5-sujay/devops-daily-practice.git
+  226  git clone https://github.com/5-sujay/devops-daily-practice.git
+  227  git add *
+  228  ls
+  229  cp jan10-11 ./devops-daily-practice/
+  230  cd devops-daily-practice/
+  231  ls
+  232  git add jan10-11
+  233  git status
+  234  git commit -m "pushing the commands pracive don ARG,ENTRYPOINT,ENV,COPY,ADD"
+  235  git status
+  236  git push https://github.com/5-sujay/devops-daily-practice.git
+  237  ld
+  238  ls
+  239  vi Dockerfile
+  240  docker build -t entry .
+  241  docker run -it --name entry-cont entry
+  242  docker run --rm -it --name entry-cont123 entry
+  243  docker run -it --rm --name entry-cont123 entry
+  244  vi Dockerfile
+  245  docker build -t entry .
+  246  docker run -it --rm --name entry-cont123 entry
+  247  vi Dockerfile
+  248  docker build -t entry .
+  249  docker run -it --rm --name entry-cont123 entry
+  250  vi Dockerfile
+  251  docker build -t entry .
+  252  docker run -it --rm --name entry-cont123 entry
+  253  vi Dockerfile
+  254  docker build -t entry .
+  255  docker run -it --rm --name entry-cont123 entry
+  256  docker build -t entry .
+  257  docker run -it --rm --name entry-cont entry echo this is runtime
+  258  docker run -it --rm --name entry-cont11 entry echo this is runtime
+  259  docker run -it --rm --name entry-cont112 entry  ls
+  260  docker build -t entry .
+  261  docker run -it --rm --entrypoint ls --name entry-con3 entry  -ltr
+  262  docker run -it --rm --entrypoint ls --name entry-con3 entry
+  263  docker run -it --rm --entrypoint ls -ltr --name entry-con3 entry
+  264  docker run -it --rm --entrypoint ls  --name entry-con3 entry -ltr
+  265  docker run -it --rm --entrypoint ls  --name entry-con3 entry |grep tmp
+  266  docker run -it --rm --entrypoint ls  --name entry-con3 entry -ltr |grep tmp
+  267  vi Dockerfile
+  268  docker build -t envir .
+  269  docker run -it --rm --name env-cont envir
+  270  vi Dockerfile
+  271  docker build -t envir .
+  272  docker run -it --rm -e run1=123 run2=456 --name env-cont envir
+  273  docker run -it --rm -e run1=123 -e run2=456 --name env-cont envir
+  274  docker run -it --rm -e run1=123 -e run2=456 --name env-cont12 envir
+  275  docker run -it --rm -e run1=123 -e run2=456 -e TEST=987 --name env-cont123 envir
+  276  vi Dockerfile
+  277  sudo vi .env
+  278  docker build -t envir .
+  279  docker run -it --rm --env-file ./.env --name my-env envir
+  280  ls
+  281  cd /
+  282  ls
+  283  cd etc/
+  284  ls
+  285  cd default/
+  286  ls
+  287  vi useradd
+  288  cd ..
+  289  cd passwd
+  290  ls
+  291  vi passwd
+  292  ls
+  293  cat Dockerfile
+  294  docker build -t my-ubuntu --build-arg INPUT="this is my input"
+  295  docker build -t --no-cache my-ubuntu --build-arg INPUT="this is my input" .
+  296  docker build  --no-cache -t my-ubuntu --build-arg INPUT="this is my input" .
+  297  docker run -it -d --rm --name nocacheee my-ubuntu
+  298  vi Dockerfile
+  299  docker build -t my-ubuntu .
+  300  docker run -it --rm --name multiple-run my-ubuntu
+  301  cat Dockerfile
+  302  vi  Dockerfile
+  303  docker build -t my-ubuntu .
+  304  docker run -it --rm --name multiple-run my-ubuntu
+  305  ls
+  306  docker images
+  307  docker image prune
+  308  docker images
+  309  docker images prune
+  310  docker images
+  311  docker ps
+  312  docker ps  -a
+  313  docker image prune
+  314  docker images
+  315  docker system df
+  316  docker run -it --name smaple my-ubuntu
+  317  docker ps
+  318  docker describe sample
+  319  docker image describe my-ubuntu
+  320  docker images
+  321  docker image describe  6649321fc91b
+  322  docker image inspect my-ubuntu
+  323  ls
+  324  docker volume create my-volume
+  325  docker volume ls
+  326  docker stop my-alpine
+  327  docker run -it -d --rm -v my-volume:/home --name my-alpine alpine
+  328  docker ps
+  329  docker exec -it my-alpine /bin/bash
+  330  docker exec -it my-alpine /bin/sh
+  331  ls
+  332  pwd
+  333  cd ..
+  334  ls
+  335  cd ubuntu/
+  336  ls
+  337  docker exec -it my-alpine /bin/sh
+  338  docker run -it -d --rm -v my-volume:/home --name my-alpine1 alpine
+  339  docker exec -it my-alpine1 /bin/sh
+  340  docker exec -it my-alpine /bin/bash
+  341  docker exec -it my-alpine /bin/sh
+  342  docker volume inspect my-volume
+  343  ls
+  344  docker ps -a
+  345  docker image prune
+  346  docker images
+  347  docker image prune -a
+  348  docker images
+  349  docker rmi $(docker images | grep "^none" | awk -F "{print $3}")
+  350  docker rmi $(docker images | grep "^none" | awk -F '{print $3}')
+  351  docker images | grep "^none" | awk -F '{print $3}'
+  352  docker images | grep "^none"
+  353  docker images
+  354  docker images docker images | grep none
+  355  docker images docker images | xargs grep none
+  356  docker images docker images | xargs grep "none"
+  357  docker images docker images -a | xargs grep "none"
+  358  docker images docker images -a  -q | xargs grep "none"
+  359  docker image prune -f
+  360  docker images
+  361  docker system df
+  362  docker image inspect  4202380b7058
+  363  vi Dockerfile
+  364  ls -a
+  365  rm .Dockerfile.swp
+  366  vi Dockerfile
+  367  docker build -t my-ubuntu .
+  368  docker run -it -d --name my-work my-ubuntu
+  369  docker exec 9373a525df6fbda0ed550a4e14f721d89f40f6a7c79533010bd3be62ada57f5f
+  370  docker exec -it 9373a525df6fbda0ed550a4e14f721d89f40f6a7c79533010bd3be62ada57f5f
+  371  docker ps
+  372  docker build -t sample .
+  373  docker run -it -d --name my-work sample
+  374  docker run -it -d --name my-work1 sample
+  375  docker run -it  --name my-work1 sample
+  376  docker run -it  --name my-work2 sample
+  377  vi Dockerfile
+  378  docker build -t sample .
+  379  docker run -it --name my-new-run sample
+  380  vi Dockerfile
+  381  docker build -t sample .
+  382  docker run -it --name ms sample
+  383  vi Dockerfile
+  384  docker build -t sample .
+  385  docker run -it --name cont123 sample
+  386  docker run -it --name cont12345 sample
+  387  docker ps
+  388  ls
+  389  cd docktest/
+  390  mkdir vol1
+  391  touch a-{1..5}.txt
+  392  ls
+  393  rm a-{1..5}.txt
+  394  ls
+  395  cd vol1/
+  396  touch a-{1..5}.txt
+  397  ls
+  398  cd ..
+  399  docker build -t sample .
+  400  vi Dockerfile
+  401  docker run -it -d --rm --name my-alpine alpine
+  402  docker exec -t my-alpine /bin/sh
+  403  docker exec -it my-alpine /bin/sh
+  404  docker ps
+  405  docker run -it -d --rm -v /home/ubuntu/docktest/vol1:/home --name myalpine1 alpine
+  406  docker exec -it my-alpine1 /bin/sh
+  407  docker exec -it myalpine1 /bin/sh
+  408  ls
+  409  cd vol1/
+  410  ls
+  411  docker stop myapline
+  412  docker stop myapline1
+  413  cd ..
+  414  docker stop myapline1
+  415  cd ..
+  416  docker stop myapline1
+  417  docker stop myalpine1
+  418  ls
+  419  history
+  420  mkdir git-test
+  421  ls
+  422  cd git_test/
+  423  ls
+  424  ls -a
+  425  vi jan 16-17
+  426  ls
+  427  ls -a
+  428  vi jan16-17
+  429  ls
+  430  history
+  431  vi jan13-14
+  432  ls
+  433  ls -a
+  434  cd devops-daily-practice/
+  435  ls
+  436  git pull https://github.com/5-sujay/devops-daily-practice.git
+  437  ls
+  438  cd ..
+  439  ls
+  440  cp jan13-14  ./devops-daily-practice/
+  441  cp jan16-17 ./devops-daily-practice/
+  442  ls
+  443  rm jan13-14 jan16-17
+  444  ls
+  445  cd devops-daily-practice/
+  446  ls
+  447  git pull https://github.com/5-sujay/devops-daily-practice.git
+  448  git add *
+  449  git status
+  450  git commit -m "pushing the jan13-14 and jan 16-17 files"
+  451  git status
+  452  git push https://github.com/5-sujay/devops-daily-practice.git
+  453  ls -a
+  454  ls
+  455  docker network l s
+  456  docker network ls
+  457  docker inspect 5fb792b81
+  458  docker stop my-alpine8
+  459  docker inspect 5fb792b81
+  460  docker run -it -d --rm --network host --name my-nginx5 nginx
+  461  docker ps
+  462  docker stop my-nginx5
+  463  docker run -it -d --rm --network host -p 8080:80 --name my-nginx5 nginx
+  464  docker ps
+  465  ls
+  466  ls -a
+  467  cd git-test/
+  468  ls
+  469  ls -a
+  470  cd ..
+  471  cd git_test/
+  472  ls
+  473  ls -a
+  474  cd devops-daily-practice/
+  475  ls
+  476  git pull https://github.com/5-sujay/devops-daily-practice.git
+  477  ls
+  478  vi jan18
+  479  history
