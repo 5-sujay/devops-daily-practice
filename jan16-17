@@ -1,0 +1,115 @@
+ 306  docker images
+  307  docker image prune
+  308  docker images
+  309  docker images prune
+  310  docker images
+  311  docker ps
+  312  docker ps  -a
+  313  docker image prune
+  314  docker images
+  315  docker system df
+  316  docker run -it --name smaple my-ubuntu
+  317  docker ps
+  318  docker describe sample
+  319  docker image describe my-ubuntu
+  320  docker images
+  321  docker image describe  6649321fc91b
+  322  docker image inspect my-ubuntu
+  323  ls
+  324  docker volume create my-volume
+  325  docker volume ls
+  326  docker stop my-alpine
+  327  docker run -it -d --rm -v my-volume:/home --name my-alpine alpine
+  328  docker ps
+  329  docker exec -it my-alpine /bin/bash
+  330  docker exec -it my-alpine /bin/sh
+  331  ls
+  332  pwd
+  333  cd ..
+  334  ls
+  335  cd ubuntu/
+  336  ls
+  337  docker exec -it my-alpine /bin/sh
+  338  docker run -it -d --rm -v my-volume:/home --name my-alpine1 alpine
+  339  docker exec -it my-alpine1 /bin/sh
+  340  docker exec -it my-alpine /bin/bash
+  341  docker exec -it my-alpine /bin/sh
+  342  docker volume inspect my-volume
+  343  ls
+  344  docker ps -a
+  345  docker image prune
+  346  docker images
+  347  docker image prune -a
+  348  docker images
+  349  docker rmi $(docker images | grep "^none" | awk -F "{print $3}")
+  350  docker rmi $(docker images | grep "^none" | awk -F '{print $3}')
+  351  docker images | grep "^none" | awk -F '{print $3}'
+  352  docker images | grep "^none"
+  353  docker images
+  354  docker images docker images | grep none
+  355  docker images docker images | xargs grep none
+  356  docker images docker images | xargs grep "none"
+  357  docker images docker images -a | xargs grep "none"
+  358  docker images docker images -a  -q | xargs grep "none"
+  359  docker image prune -f
+  360  docker images
+  361  docker system df
+  362  docker image inspect  4202380b7058
+  363  vi Dockerfile
+  364  ls -a
+  365  rm .Dockerfile.swp
+  366  vi Dockerfile
+  367  docker build -t my-ubuntu .
+  368  docker run -it -d --name my-work my-ubuntu
+  369  docker exec 9373a525df6fbda0ed550a4e14f721d89f40f6a7c79533010bd3be62ada57f5f
+  370  docker exec -it 9373a525df6fbda0ed550a4e14f721d89f40f6a7c79533010bd3be62ada57f5f
+  371  docker ps
+  372  docker build -t sample .
+  373  docker run -it -d --name my-work sample
+  374  docker run -it -d --name my-work1 sample
+  375  docker run -it  --name my-work1 sample
+  376  docker run -it  --name my-work2 sample
+  377  vi Dockerfile
+  378  docker build -t sample .
+  379  docker run -it --name my-new-run sample
+  380  vi Dockerfile
+  381  docker build -t sample .
+  382  docker run -it --name ms sample
+  383  vi Dockerfile
+  384  docker build -t sample .
+  385  docker run -it --name cont123 sample
+  386  docker run -it --name cont12345 sample
+  387  docker ps
+  388  ls
+  389  cd docktest/
+  390  mkdir vol1
+  391  touch a-{1..5}.txt
+  392  ls
+  393  rm a-{1..5}.txt
+  394  ls
+  395  cd vol1/
+  396  touch a-{1..5}.txt
+  397  ls
+  398  cd ..
+  399  docker build -t sample .
+  400  vi Dockerfile
+  401  docker run -it -d --rm --name my-alpine alpine
+  402  docker exec -t my-alpine /bin/sh
+  403  docker exec -it my-alpine /bin/sh
+  404  docker ps
+  405  docker run -it -d --rm -v /home/ubuntu/docktest/vol1:/home --name myalpine1 alpine
+  406  docker exec -it my-alpine1 /bin/sh
+  407  docker exec -it myalpine1 /bin/sh
+  408  ls
+  409  cd vol1/
+  410  ls
+  411  docker stop myapline
+  412  docker stop myapline1
+  413  cd ..
+  414  docker stop myapline1
+  415  cd ..
+  416  docker stop myapline1
+  417  docker stop myalpine1
+  418  ls
+  419  history
+

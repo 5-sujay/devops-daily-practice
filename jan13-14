@@ -1,0 +1,68 @@
+  239  vi Dockerfile
+  240  docker build -t entry .
+  241  docker run -it --name entry-cont entry
+  242  docker run --rm -it --name entry-cont123 entry
+  243  docker run -it --rm --name entry-cont123 entry
+  244  vi Dockerfile
+  245  docker build -t entry .
+  246  docker run -it --rm --name entry-cont123 entry
+  247  vi Dockerfile
+  248  docker build -t entry .
+  249  docker run -it --rm --name entry-cont123 entry
+  250  vi Dockerfile
+  251  docker build -t entry .
+  252  docker run -it --rm --name entry-cont123 entry
+  253  vi Dockerfile
+  254  docker build -t entry .
+  255  docker run -it --rm --name entry-cont123 entry
+  256  docker build -t entry .
+  257  docker run -it --rm --name entry-cont entry echo this is runtime
+  258  docker run -it --rm --name entry-cont11 entry echo this is runtime
+  259  docker run -it --rm --name entry-cont112 entry  ls
+  260  docker build -t entry .
+  261  docker run -it --rm --entrypoint ls --name entry-con3 entry  -ltr
+  262  docker run -it --rm --entrypoint ls --name entry-con3 entry
+  263  docker run -it --rm --entrypoint ls -ltr --name entry-con3 entry
+  264  docker run -it --rm --entrypoint ls  --name entry-con3 entry -ltr
+  265  docker run -it --rm --entrypoint ls  --name entry-con3 entry |grep tmp
+  266  docker run -it --rm --entrypoint ls  --name entry-con3 entry -ltr |grep tmp
+  267  vi Dockerfile
+  268  docker build -t envir .
+  269  docker run -it --rm --name env-cont envir
+  270  vi Dockerfile
+  271  docker build -t envir .
+  272  docker run -it --rm -e run1=123 run2=456 --name env-cont envir
+  273  docker run -it --rm -e run1=123 -e run2=456 --name env-cont envir
+  274  docker run -it --rm -e run1=123 -e run2=456 --name env-cont12 envir
+  275  docker run -it --rm -e run1=123 -e run2=456 -e TEST=987 --name env-cont123 envir
+  276  vi Dockerfile
+  277  sudo vi .env
+  278  docker build -t envir .
+  279  docker run -it --rm --env-file ./.env --name my-env envir
+  280  ls
+  281  cd /
+  282  ls
+  283  cd etc/
+  284  ls
+  285  cd default/
+  286  ls
+  287  vi useradd
+  288  cd ..
+  289  cd passwd
+  290  ls
+  291  vi passwd
+  292  ls
+  293  cat Dockerfile
+  294  docker build -t my-ubuntu --build-arg INPUT="this is my input"
+  295  docker build -t --no-cache my-ubuntu --build-arg INPUT="this is my input" .
+  296  docker build  --no-cache -t my-ubuntu --build-arg INPUT="this is my input" .
+  297  docker run -it -d --rm --name nocacheee my-ubuntu
+  298  vi Dockerfile
+  299  docker build -t my-ubuntu .
+  300  docker run -it --rm --name multiple-run my-ubuntu
+  301  cat Dockerfile
+  302  vi  Dockerfile
+  303  docker build -t my-ubuntu .
+  304  docker run -it --rm --name multiple-run my-ubuntu
+  305  ls
+
