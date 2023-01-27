@@ -1,0 +1,107 @@
+ 119  sudo find / -name "*.txt" -exec cp {} /home/ec2-user/all-text-file \;
+  120  cd all-text-file/
+  121  ls
+  122  find / -type f -print -exec cp {} /path/to/folder/ \;
+  123  find --help
+  124  man find
+  125  fin . -type f -name "*.txt"
+  126  find . -type f -name "*.txt"
+  127  pwd
+  128  ls -a
+  129  sudo find /usr -type f -name "tmp"
+  130  sudo find / -type f -name "tmp"
+  131  cd /
+  132  ls
+  133  sudo find / -type d -name "tmp"
+  134  cd /home/ec2-user/
+  135  find . -type f -empty
+  136  find . -type f -atime +30
+  137  find . -type f -atime -30
+  138  find . -type f -atime -5
+  139  find . -type f -mtime +5
+  140  find . -type f -nouser
+  141  find /etc/passwd/ -type f -nouser
+  142  find /etc/passwd -type f -nouser
+  143  cd /
+  144  ls
+  145  cd etc/
+  146  ls
+  147  cd passwd
+  148  ls
+  149  clear
+  150  ls
+  151  cd passwd
+  152  vi passwd
+  153  cd .
+  154  cd /home/ec2-user/
+  155  ls
+  156  find /etc/passwd -type f -nouser
+  157  ls . |grep "*.txt"
+  158  ls . |grep "*.sh"
+  159  ls . | grep "*.sh"
+  160  ls | grep "*.sh"
+  161  ls
+  162  ls |grep "*.sh"
+  163  ls |xargs grep "*.sh"
+  164  ls | xargs grep "*.sh"
+  165  ls . | xargs grep "*.sh"
+  166  ls . | xargs grep "dis*"
+  167  touch sbc.txt
+  168  touch abc.txt
+  169  vi sbc.txt
+  170  vi abc.txt
+  171  find . -type f -name "*bc"
+  172  find . -type f -name "*bc.txt"
+  173  find . -type f -name "*.txt"
+  174  find . -type f -name "*bc.txt"
+  175  find . -type f -name "*bc.txt" |wc -l
+  176  find . -type f -name "*bc.txt" | wc -l
+  177  ls *bc.txt
+  178  ls *bc.txt |xargs wc -l
+  179  find . -type f -name "*bc.txt" |xargs wc -l
+  180  find . -type f -name "*.php"
+  181  find / -type f -name "*.php"
+  182  sudo find / -type f -name "*.php"
+  183  sudo find / -type f -perm  0777
+  184  sudo find / -type f -perm  0644
+  185  sudo find / -type f -perm  0444
+  186  chmod 644 abc.txt
+  187  chmod 644 sbc.txt
+  188  ls -ltr
+  189  find . -type f -perm 0644 -name "*bc.txt"
+  190  find . -type f -perm 0644 -name "*bc.txt" |xargs chmod 777
+  191  ls -ltr
+  192  find . -type f -empty
+  193  find . -type d -empty
+  194  find / -type d -empty
+  195  find .-type f -nmae ".*"
+  196  find .-type f -name ".*"
+  197  find . -type f -name ".*"
+  198  find . -type f -mtime -50
+  199  find . -type f -atime -50
+  200  find . -type f -mtime +50 -mtime -50
+  201  find . -type f -mtime +50 -mtime -100
+  202  find . -type f -mtime +50
+  203  find . -type f -mtime +50 -mtime -1
+  204  find . -type f -mtime +50 -mtime -51
+  205  find . -type cmin -60
+  206  find . -type f cmin -60
+  207  find . -name "*.txt"
+  208  find . -name "*bc.txt"
+  209  find . -name "*bc.txt" exec cp {} /home/ec2-user/sujay
+  210  find . -name "*bc.txt" exec cp {} /home/ec2-user/sujay \;
+  211  mkdir sujay
+  212  ls
+  213  find . -name "*bc.txt" exec cp {} /home/ec2-user/sujay \;
+  214  find . -name "*bc.txt" -exec cp {} /home/ec2-user/sujay \;
+  215  find . -name "*bc.txt" -exec cp {} /home/ec2-user/sujay/suri \;
+  216  ls
+  217  cd sujay/
+  218  ls
+  219  cd suri
+  220  cd ..
+  221  pwd
+  222  ls
+  223  find . -name "*bc.txt" -exec cp {} /home/ec2-user/sujay/suri/ \;
+  224  find . -name "*bc.txt" -exec cp {} /home/ec2-user/sujay/suri11/ \;
+  225  find . -name "*bc.txt" -exec cp {} /home/ec2-user/sujay/suri11 \;
